@@ -22,6 +22,7 @@
   function draw() {
     background(0);
     car.velocityX = speed;
+    car.x = 1465;
     collision();
 
     drawSprites();
