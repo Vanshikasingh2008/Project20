@@ -22,7 +22,6 @@
   function draw() {
     background(0);
     car.velocityX = speed;
-    car.x = 1465;
     collision();
 
     drawSprites();
@@ -31,6 +30,7 @@
 function collision(){
   if(wall.x-car.x <= wall.width/2+car.width/2){
    car.velocityX = 0;
+    car.x = 1465;
 
    if(deformation<100){
     car.shapeColor = rgb(0,255,0);
